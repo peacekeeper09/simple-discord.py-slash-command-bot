@@ -82,10 +82,15 @@ bot = discord.Bot()
 
 @bot.slash_command()
 async def hello(ctx, name: str = None):
+    name = name or ctx.author.name
+    await ctx.respond(f"Hello {name}!")
 
-    await ctx.respond(f"Hello!")
+@bot.user_command(name="Bot will greet you back!")
+async def hi(ctx, user):
+    await ctx.respond(f"{ctx.author.mention} says hello to {user.name}!")
 
 bot.run("bot token here")
+
 ```
 
 ![App Screenshot](https://cdn.discordapp.com/attachments/883097731667750954/1041851821167222854/image.png)
