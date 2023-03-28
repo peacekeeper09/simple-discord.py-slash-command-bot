@@ -12,7 +12,7 @@ Since am using windows I will have to install them on terminal.
 
 You must have [Python](https://www.python.org/downloads/) installed on your respective device.
 
-After making sure that you have python installed, make sure you have a good idle, developers across the world recommend [VSCODE](https://code.visualstudio.com/download).
+After making sure that you have python installed, make sure you have a good ide, developers across the world recommend [VSCODE](https://code.visualstudio.com/download).
 
 
 ## Installation
